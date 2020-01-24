@@ -35,7 +35,7 @@ int main(void)
 	i=i+4.5;
 	delay(7);
    }
-   PlaySound(TEXT("title2.wav"),NULL,SND_ASYNC);
+   PlaySound(TEXT("sound/title2.wav"),NULL,SND_ASYNC);
    delay(700);
    setcolor(WHITE);
    settextstyle(10,0,6);
@@ -97,19 +97,19 @@ void mainn(){
    subject = getch();
    switch(subject){
        case '1' :
-           PlaySound(TEXT("select1.wav"),NULL,SND_ASYNC);
+           PlaySound(TEXT("sound/select1.wav"),NULL,SND_ASYNC);
            computer();
             break;
        case '2' :
-           PlaySound(TEXT("select1.wav"),NULL,SND_ASYNC);
+           PlaySound(TEXT("sound/select1.wav"),NULL,SND_ASYNC);
            chemistry();
             break;
        case '3' :
-           PlaySound(TEXT("select1.wav"),NULL,SND_ASYNC);
+           PlaySound(TEXT("sound/select1.wav"),NULL,SND_ASYNC);
            maths();
             break;
        default :
-           PlaySound(TEXT("back.wav"),NULL,SND_ASYNC);
+           PlaySound(TEXT("sound/back.wav"),NULL,SND_ASYNC);
            outtextxy(10,380,"Select Valid Option");
             goto topic;
    }
@@ -188,7 +188,7 @@ void goback(char subject){
 	topic = getch();
 	switch(topic){
 		case 't':
-		     PlaySound(TEXT("select4.wav"),NULL,SND_ASYNC);
+		     PlaySound(TEXT("sound/select4.wav"),NULL,SND_ASYNC);
 		     if(subject == 'c'){
                 chemistry();
 		     }
@@ -200,7 +200,7 @@ void goback(char subject){
 		     }
 		     break;
 		case 's':
-		    PlaySound(TEXT("select3.wav"),NULL,SND_ASYNC);
+		    PlaySound(TEXT("sound/select3.wav"),NULL,SND_ASYNC);
             mainn();
             break;
         }
@@ -214,7 +214,7 @@ void goback1(char subject){
 	topic = getch();
 	switch(topic){
 		case 't':
-		     PlaySound(TEXT("select4.wav"),NULL,SND_ASYNC);
+		     PlaySound(TEXT("sound/select4.wav"),NULL,SND_ASYNC);
 		     if(subject == 'c'){
                 chemistry();
 		     }
@@ -226,11 +226,11 @@ void goback1(char subject){
 		     }
 		     break;
 		case 's':
-		    PlaySound(TEXT("select3.wav"),NULL,SND_ASYNC);
+		    PlaySound(TEXT("sound/select3.wav"),NULL,SND_ASYNC);
             mainn();
             break;
         case '1':
-            PlaySound(TEXT("select1.wav"),NULL,SND_ASYNC);
+            PlaySound(TEXT("sound/select1.wav"),NULL,SND_ASYNC);
             if(subject == 'c'){
                 corrosion();
 		     }
@@ -242,11 +242,11 @@ void goback1(char subject){
 		     }
 		     break;
         case '2':
-            PlaySound(TEXT("select1.wav"),NULL,SND_ASYNC);
+            PlaySound(TEXT("sound/select1.wav"),NULL,SND_ASYNC);
             point();
             break;
         default:
-            PlaySound(TEXT("back.wav"),NULL,SND_ASYNC);
+            PlaySound(TEXT("sound/back.wav"),NULL,SND_ASYNC);
             outtextxy(10,380,"Select a valid option!");
             goto go_back;
         }
@@ -274,7 +274,7 @@ void goback2(char subject){
 	chapter = getch();
 	switch(chapter){
 		case 't':
-		     PlaySound(TEXT("select4.wav"),NULL,SND_ASYNC);
+		     PlaySound(TEXT("sound/select4.wav"),NULL,SND_ASYNC);
 		     if(subject == 'c'){
                 chemistry();
 		     }
@@ -286,11 +286,11 @@ void goback2(char subject){
 		     }
 		     break;
 		case 's':
-		    PlaySound(TEXT("select3.wav"),NULL,SND_ASYNC);
+		    PlaySound(TEXT("sound/select3.wav"),NULL,SND_ASYNC);
 			mainn();
 			break;
 		default:
-		    PlaySound(TEXT("back.wav"),NULL,SND_ASYNC);
+		    PlaySound(TEXT("sound/back.wav"),NULL,SND_ASYNC);
 		    outtextxy(10,380,"Select a valid option!");
 			goto end_e;
 
@@ -565,37 +565,37 @@ void corrosion(){
     getch();
     setbkcolor(BLACK);
     cleardevice();
-    readimagefile("1.jpg",0,100,640,380);
+    readimagefile("images/1.jpg",0,100,640,380);
     getch();
     getch();
-    readimagefile("2.jpg",0,100,640,380);
+    readimagefile("images/2.jpg",0,100,640,380);
     getch();
     getch();
-    readimagefile("3.jpg",0,100,640,380);
+    readimagefile("images/3.jpg",0,100,640,380);
     getch();
     getch();
-    readimagefile("4.jpg",0,100,640,380);
+    readimagefile("images/4.jpg",0,100,640,380);
     getch();
     getch();
-    readimagefile("5.jpg",0,100,640,380);
+    readimagefile("images/5.jpg",0,100,640,380);
     getch();
     getch();
-    readimagefile("6.jpg",0,100,640,380);
+    readimagefile("images/6.jpg",0,100,640,380);
     getch();
     getch();
-    readimagefile("7.jpg",0,100,640,380);
+    readimagefile("images/7.jpg",0,100,640,380);
     getch();
     getch();
-    readimagefile("8.jpg",0,100,640,380);
+    readimagefile("images/8.jpg",0,100,640,380);
     getch();
     getch();
-    readimagefile("9.jpg",0,100,640,380);
+    readimagefile("images/9.jpg",0,100,640,380);
     getch();
     getch();
-    readimagefile("10.jpg",0,100,640,380);
+    readimagefile("images/10.jpg",0,100,640,380);
     getch();
     getch();
-    readimagefile("11.jpg",0,100,640,380);
+    readimagefile("images/11.jpg",0,100,640,380);
     getch();
     getch();
     goback2('c');
